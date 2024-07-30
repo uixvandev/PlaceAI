@@ -6,19 +6,36 @@
 	objectVersion = 60;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DBEF62EC2C58BA1D004278F3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF62E92C58BA1D004278F3 /* MainView.swift */; };
+		DBEF62ED2C58BA1D004278F3 /* PlaceAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF62EA2C58BA1D004278F3 /* PlaceAIApp.swift */; };
+		DBEF62EE2C58BA1D004278F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBEF62E62C58BA1D004278F3 /* Preview Assets.xcassets */; };
+		DBEF62EF2C58BA1D004278F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBEF62E82C58BA1D004278F3 /* Assets.xcassets */; };
+		DBEF62F82C58BC49004278F3 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF62F72C58BC49004278F3 /* Place.swift */; };
+		DBEF62FB2C58BCFE004278F3 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF62FA2C58BCFE004278F3 /* APIServices.swift */; };
+		DBEF62FE2C58BD46004278F3 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = DBEF62FD2C58BD46004278F3 /* GoogleGenerativeAI */; };
+		DBEF63002C58C060004278F3 /* PlaceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF62FF2C58C05D004278F3 /* PlaceVM.swift */; };
+		DBEF63022C58C1C9004278F3 /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF63012C58C1C9004278F3 /* PlaceView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DBEF62D22C58B9C9004278F3 /* PlaceAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaceAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEF62E62C58BA1D004278F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DBEF62E82C58BA1D004278F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBEF62E92C58BA1D004278F3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DBEF62EA2C58BA1D004278F3 /* PlaceAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAIApp.swift; sourceTree = "<group>"; };
+		DBEF62F72C58BC49004278F3 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		DBEF62FA2C58BCFE004278F3 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		DBEF62FF2C58C05D004278F3 /* PlaceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceVM.swift; sourceTree = "<group>"; };
+		DBEF63012C58C1C9004278F3 /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		DBEF62D42C58B9C9004278F3 /* PlaceAI */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PlaceAI; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DBEF62CF2C58B9C9004278F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEF62FE2C58BD46004278F3 /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -28,7 +45,7 @@
 		DBEF62C92C58B9C9004278F3 = {
 			isa = PBXGroup;
 			children = (
-				DBEF62D42C58B9C9004278F3 /* PlaceAI */,
+				DBEF62EB2C58BA1D004278F3 /* PlaceAI */,
 				DBEF62D32C58B9C9004278F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +56,77 @@
 				DBEF62D22C58B9C9004278F3 /* PlaceAI.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DBEF62E72C58BA1D004278F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DBEF62E62C58BA1D004278F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DBEF62EB2C58BA1D004278F3 /* PlaceAI */ = {
+			isa = PBXGroup;
+			children = (
+				DBEF62F92C58BCE7004278F3 /* Services */,
+				DBEF62F62C58BC3E004278F3 /* Model */,
+				DBEF62F22C58BA2B004278F3 /* Constant */,
+				DBEF62F12C58BA25004278F3 /* ViewModel */,
+				DBEF62F52C58BB63004278F3 /* App */,
+				DBEF62F02C58BA20004278F3 /* View */,
+				DBEF62E72C58BA1D004278F3 /* Preview Content */,
+				DBEF62E82C58BA1D004278F3 /* Assets.xcassets */,
+			);
+			path = PlaceAI;
+			sourceTree = "<group>";
+		};
+		DBEF62F02C58BA20004278F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBEF62E92C58BA1D004278F3 /* MainView.swift */,
+				DBEF63012C58C1C9004278F3 /* PlaceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBEF62F12C58BA25004278F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DBEF62FF2C58C05D004278F3 /* PlaceVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DBEF62F22C58BA2B004278F3 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		DBEF62F52C58BB63004278F3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DBEF62EA2C58BA1D004278F3 /* PlaceAIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DBEF62F62C58BC3E004278F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBEF62F72C58BC49004278F3 /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBEF62F92C58BCE7004278F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DBEF62FA2C58BCFE004278F3 /* APIServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -56,11 +144,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				DBEF62D42C58B9C9004278F3 /* PlaceAI */,
-			);
 			name = PlaceAI;
 			packageProductDependencies = (
+				DBEF62FD2C58BD46004278F3 /* GoogleGenerativeAI */,
 			);
 			productName = PlaceAI;
 			productReference = DBEF62D22C58B9C9004278F3 /* PlaceAI.app */;
@@ -90,6 +176,9 @@
 				Base,
 			);
 			mainGroup = DBEF62C92C58B9C9004278F3;
+			packageReferences = (
+				DBEF62FC2C58BD46004278F3 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			productRefGroup = DBEF62D32C58B9C9004278F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -104,6 +193,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEF62EE2C58BA1D004278F3 /* Preview Assets.xcassets in Resources */,
+				DBEF62EF2C58BA1D004278F3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEF63022C58C1C9004278F3 /* PlaceView.swift in Sources */,
+				DBEF62F82C58BC49004278F3 /* Place.swift in Sources */,
+				DBEF62EC2C58BA1D004278F3 /* MainView.swift in Sources */,
+				DBEF62FB2C58BCFE004278F3 /* APIServices.swift in Sources */,
+				DBEF62ED2C58BA1D004278F3 /* PlaceAIApp.swift in Sources */,
+				DBEF63002C58C060004278F3 /* PlaceVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBEF62FC2C58BD46004278F3 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DBEF62FD2C58BD46004278F3 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBEF62FC2C58BD46004278F3 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DBEF62CA2C58B9C9004278F3 /* Project object */;
 }
